@@ -1,2 +1,2 @@
 # Math
-The Quadratic Equation
+This code solves quadratic equations
