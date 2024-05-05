@@ -4,16 +4,15 @@ if a == 1:
 	print ("It's a reduced quadratic equation")
 else:
 	print ("It's not a reduced quadratic equation")
-print ("Discriminant", "=", D)
 if D > 0:
-	import math
-	x1 = (-b + math.sqrt(D))/(2*a)
-	x2 = (-b - math.sqrt(D))/(2*a)
-	print ("It's the square root of the discriminant", math.sqrt(D))
-	print ("x1 =", x1)
-	print ("x2 =", x2)
+        import math
+        x1 = (-b + math.sqrt(D))/(2*a)
+        x2 = (-b - math.sqrt(D))/(2*a)
+        print (f"The square root of the discriminant is {math.sqrt(D)}")
+        print (f"x1 = {x1}")
+        print (f"x2 = {x2}")
 elif D == 0:
-	x = (-b)/(2*a)
-	print ("x =", x)
+        x = (-b)/(2*a)
+        print (f"x = {x}")
 else:
-	print("The equation haven't any roots")
+        print("The equation haven't any roots")
