@@ -1,2 +1,2 @@
 # Math
-This code solves quadratic equations
+Some Python codes about math
