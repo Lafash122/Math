@@ -27,6 +27,13 @@ def not_bigger_primes(n):
         k += 1
     return a
 
+def divisors(n):
+    a = []
+    for i in range(1, round(n**0.5)+1):
+        if n % i == 0:
+            a.append([i, n//i])
+    return a
+
 def is_prime(n):
     for i in range(2, round(n**0.5)+1):
         if n % i == 0:
@@ -49,6 +56,7 @@ def near_bigger_prime(n):
 n = int(input("Number of prime numbers: "))
 print(first_primes(n))
 print(not_bigger_primes(n))
+print(divisors(n))
 print(is_prime(n))
 print(near_least_prime(n))
 print(near_bigger_prime(n))
