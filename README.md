@@ -1,2 +1,2 @@
 # Math
-Some Python codes about math
+Solving some mathematical problems
