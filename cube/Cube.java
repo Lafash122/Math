@@ -12,8 +12,6 @@ public class Cube {
 		eps = Double.parseDouble(args[3]);;
 		delta = Double.parseDouble(args[4]);;
 
-		//System.out.println("x^3 + " + a + "x^2 + " + b + "x + " + c);
-
 		double d = disc();
 		if (d <= 0) {
 			double root;
@@ -40,8 +38,6 @@ public class Cube {
 		double sqRoot2 = ((-2) * a + Math.sqrt(d)) / 6;
 		double fSqRoot1 = func(sqRoot1);
 		double fSqRoot2 = func(sqRoot2);
-
-		//System.out.println(sqRoot1 + " " + fSqRoot1 + "\t" + sqRoot2 + " " + fSqRoot2);
 
 		if ((Math.abs(fSqRoot1) < eps) && (Math.abs(fSqRoot2) < eps)) {
 			double root = (sqRoot1 + sqRoot2) / 2;
@@ -188,4 +184,5 @@ public class Cube {
 
 		return center;
 	}
+
 }
